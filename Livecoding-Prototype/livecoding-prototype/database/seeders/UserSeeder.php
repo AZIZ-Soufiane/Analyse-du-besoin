@@ -3,12 +3,12 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\Tag;
+use App\Models\User;
 
-class TagSeeder extends Seeder
+class UserSeeder extends Seeder
 {
     public function run(): void
     {
-        Tag::factory()->count(10)->create();
+        User::factory()->count(5)->create();
     }
 }
